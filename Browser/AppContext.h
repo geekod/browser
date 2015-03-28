@@ -13,4 +13,7 @@
 
 @property (strong, nonatomic) Settings* settings;
 
+// for acceptance test only
+@property (weak, nonatomic) id browserViewController;
+
 @end

@@ -32,10 +32,19 @@
 		1808B4CC1ABE57AD00225224 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1808B4B91ABE57AD00225224 /* Settings.m */; };
 		1808B4CD1ABE57AD00225224 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1808B4B91ABE57AD00225224 /* Settings.m */; };
 		1823DC3E1ABEFA1D00290C07 /* BrowserViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1823DC3D1ABEFA1D00290C07 /* BrowserViewModelTests.m */; };
+		187695B51AC6C1D60065E628 /* TabSwitchTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 187695B41AC6C1D60065E628 /* TabSwitchTestCase.m */; };
+		EF24DB5AC539CE7A05C7E34C /* libPods-Acceptance Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C0FEB5D937287B04194F85 /* libPods-Acceptance Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		1808B49A1ABE4D5E00225224 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1808B4781ABE4D5E00225224 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1808B47F1ABE4D5E00225224;
+			remoteInfo = Browser;
+		};
+		187695AF1AC6B4A00065E628 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1808B4781ABE4D5E00225224 /* Project object */;
 			proxyType = 1;
@@ -76,6 +85,12 @@
 		1808B4B81ABE57AD00225224 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		1808B4B91ABE57AD00225224 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
 		1823DC3D1ABEFA1D00290C07 /* BrowserViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserViewModelTests.m; sourceTree = "<group>"; };
+		187695A91AC6B4A00065E628 /* Acceptance Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Acceptance Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		187695AC1AC6B4A00065E628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187695B41AC6C1D60065E628 /* TabSwitchTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabSwitchTestCase.m; sourceTree = "<group>"; };
+		56C6863CAF1BE17A2590322A /* Pods-Acceptance Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acceptance Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Acceptance Tests/Pods-Acceptance Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		94C0FEB5D937287B04194F85 /* libPods-Acceptance Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Acceptance Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB16AF575026EF74C7ACE512 /* Pods-Acceptance Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acceptance Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Acceptance Tests/Pods-Acceptance Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +108,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		187695A61AC6B4A00065E628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF24DB5AC539CE7A05C7E34C /* libPods-Acceptance Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -101,7 +124,10 @@
 			children = (
 				1808B4821ABE4D5E00225224 /* Browser */,
 				1808B49C1ABE4D5E00225224 /* BrowserTests */,
+				187695AA1AC6B4A00065E628 /* Acceptance Tests */,
 				1808B4811ABE4D5E00225224 /* Products */,
+				3ECD0087D2535F00E9A27769 /* Pods */,
+				4A9FF3BE2621957720EAEF59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +136,7 @@
 			children = (
 				1808B4801ABE4D5E00225224 /* Browser.app */,
 				1808B4991ABE4D5E00225224 /* BrowserTests.xctest */,
+				187695A91AC6B4A00065E628 /* Acceptance Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,6 +200,40 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		187695AA1AC6B4A00065E628 /* Acceptance Tests */ = {
+			isa = PBXGroup;
+			children = (
+				187695B41AC6C1D60065E628 /* TabSwitchTestCase.m */,
+				187695AB1AC6B4A00065E628 /* Supporting Files */,
+			);
+			path = "Acceptance Tests";
+			sourceTree = "<group>";
+		};
+		187695AB1AC6B4A00065E628 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				187695AC1AC6B4A00065E628 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3ECD0087D2535F00E9A27769 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56C6863CAF1BE17A2590322A /* Pods-Acceptance Tests.debug.xcconfig */,
+				AB16AF575026EF74C7ACE512 /* Pods-Acceptance Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4A9FF3BE2621957720EAEF59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94C0FEB5D937287B04194F85 /* libPods-Acceptance Tests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -211,6 +272,26 @@
 			productReference = 1808B4991ABE4D5E00225224 /* BrowserTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		187695A81AC6B4A00065E628 /* Acceptance Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187695B31AC6B4A00065E628 /* Build configuration list for PBXNativeTarget "Acceptance Tests" */;
+			buildPhases = (
+				A9D8FA315C09A95875F58CFE /* Check Pods Manifest.lock */,
+				187695A51AC6B4A00065E628 /* Sources */,
+				187695A61AC6B4A00065E628 /* Frameworks */,
+				187695A71AC6B4A00065E628 /* Resources */,
+				27952D1065EA349947695C5E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				187695B01AC6B4A00065E628 /* PBXTargetDependency */,
+			);
+			name = "Acceptance Tests";
+			productName = "Acceptance Tests";
+			productReference = 187695A91AC6B4A00065E628 /* Acceptance Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -224,6 +305,10 @@
 						CreatedOnToolsVersion = 6.2;
 					};
 					1808B4981ABE4D5E00225224 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 1808B47F1ABE4D5E00225224;
+					};
+					187695A81AC6B4A00065E628 = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 1808B47F1ABE4D5E00225224;
 					};
@@ -244,6 +329,7 @@
 			targets = (
 				1808B47F1ABE4D5E00225224 /* Browser */,
 				1808B4981ABE4D5E00225224 /* BrowserTests */,
+				187695A81AC6B4A00065E628 /* Acceptance Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -272,7 +358,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		187695A71AC6B4A00065E628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27952D1065EA349947695C5E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Acceptance Tests/Pods-Acceptance Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9D8FA315C09A95875F58CFE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1808B47C1ABE4D5E00225224 /* Sources */ = {
@@ -305,6 +431,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		187695A51AC6B4A00065E628 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187695B51AC6C1D60065E628 /* TabSwitchTestCase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -312,6 +446,11 @@
 			isa = PBXTargetDependency;
 			target = 1808B47F1ABE4D5E00225224 /* Browser */;
 			targetProxy = 1808B49A1ABE4D5E00225224 /* PBXContainerItemProxy */;
+		};
+		187695B01AC6B4A00065E628 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1808B47F1ABE4D5E00225224 /* Browser */;
+			targetProxy = 187695AF1AC6B4A00065E628 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -467,6 +606,42 @@
 			};
 			name = Release;
 		};
+		187695B11AC6B4A00065E628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56C6863CAF1BE17A2590322A /* Pods-Acceptance Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Acceptance Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Browser.app/Browser";
+			};
+			name = Debug;
+		};
+		187695B21AC6B4A00065E628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB16AF575026EF74C7ACE512 /* Pods-Acceptance Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Acceptance Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Browser.app/Browser";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -493,6 +668,15 @@
 			buildConfigurations = (
 				1808B4A71ABE4D5E00225224 /* Debug */,
 				1808B4A81ABE4D5E00225224 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187695B31AC6B4A00065E628 /* Build configuration list for PBXNativeTarget "Acceptance Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187695B11AC6B4A00065E628 /* Debug */,
+				187695B21AC6B4A00065E628 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

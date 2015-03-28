@@ -26,6 +26,9 @@
     self.model = [[BrowserViewModel alloc] initWithSettings:self.ctx.settings];
     currentWebViewIndex = -1;
     [self createTab];
+
+    // for acceptance test only
+    self.ctx.browserViewController = self;
 }
 
 - (void)didReceiveMemoryWarning {

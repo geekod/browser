@@ -21,6 +21,7 @@
     self.browserViewController = [[BrowserViewController alloc] initWithNibName:@"BrowserViewController" bundle:nil];
     [self addChildViewController:self.browserViewController];
     [self.view addSubview:self.browserViewController.view];
+    [self.browserViewController didMoveToParentViewController:self];
 }
 
 - (void)didReceiveMemoryWarning {
